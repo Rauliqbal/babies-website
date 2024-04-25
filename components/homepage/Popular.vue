@@ -1,5 +1,4 @@
 <script setup>
-import SliderCard from "../SliderCard.vue";
 const { data: articles } = await useAsyncData("articles", () =>
   queryContent("/article").sort({ publishedAt: -1 }).find()
 );
@@ -12,6 +11,20 @@ const { data: articles } = await useAsyncData("articles", () =>
       terpopuler
     </h2>
 
-    <SliderCard />
+    <Swiper
+      :modules="[SwiperPagination]"
+      :slides-per-view="4"
+      :space-between="24"
+      :pagination="true"
+    >
+      <SwiperSlide v-for="slide in 5" :key="slide" class="pb-10">
+        <CardArticle />
+      </SwiperSlide>
+    </Swiper>
   </section>
 </template>
+<style>
+.swiper-pagination-bullet-active {
+  background-color: #f86aba;
+}
+</style>
