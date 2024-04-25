@@ -12,6 +12,7 @@ const { data: articles } = await useAsyncData("articles", () =>
     </h2>
 
     <Swiper
+      class="!hidden md:!block"
       :modules="[SwiperPagination]"
       :slides-per-view="1"
       :space-between="24"
@@ -29,9 +30,13 @@ const { data: articles } = await useAsyncData("articles", () =>
       }"
     >
       <SwiperSlide v-for="slide in 5" :key="slide" class="pb-10">
-        <CardArticle />
+        <LazyCardArticle />
       </SwiperSlide>
     </Swiper>
+
+    <div class="grid grid-cols-2 gap-4 md:hidden">
+      <LazyCardArticle v-for="slide in 4" :key="slide" />
+    </div>
   </section>
 </template>
 <style>

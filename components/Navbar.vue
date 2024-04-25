@@ -55,7 +55,7 @@ function showHide() {
                       class="peer py-4 md:py-6 uppercase font-semibold tracking-wide transition-all ease-out duration-200 text-gray-800 before:transition-all before:duration-200 relative before:w-0 md:hover:before:w-full before:h-[2px] before:bottom-5 before:block before:absolute before:bg-primary"
                     >
                       <div class="flex items-center gap-1">
-                        <p>Parenting</p>
+                        <p>Kebutuhan bayi & anak</p>
                         <!-- Icon Dropdown -->
                         <svg
                           width="10"
@@ -78,7 +78,7 @@ function showHide() {
                         <NuxtLink
                           class="group-hover:underline group-hover:rounded-full"
                           @click="showHide"
-                          to="/parenting"
+                          to="/parenting/0-6-bulan"
                           >0-6 BULAN</NuxtLink
                         >
                       </li>
@@ -86,7 +86,7 @@ function showHide() {
                         <NuxtLink
                           class="group-hover:underline group-hover:rounded-full"
                           @click="showHide"
-                          to="/parenting"
+                          to="/parenting/7-12-bulan"
                           >7-12 BULAN</NuxtLink
                         >
                       </li>
@@ -94,16 +94,16 @@ function showHide() {
                         <NuxtLink
                           class="group-hover:underline group-hover:rounded-full"
                           @click="showHide"
-                          to="/parenting"
-                          >1-3 BULAN</NuxtLink
+                          to="/parenting/1-3-tahun"
+                          >1-3 Tahun</NuxtLink
                         >
                       </li>
                       <li class="group px-4 py-3">
                         <NuxtLink
                           class="group-hover:underline group-hover:rounded-full"
                           @click="showHide"
-                          to="/parenting"
-                          >4-6 BULAN</NuxtLink
+                          to="/parenting/4-6-tahun"
+                          >4-6 Tahun</NuxtLink
                         >
                       </li>
                     </ul>
@@ -138,7 +138,7 @@ function showHide() {
                         <NuxtLink
                           class="group-hover:underline group-hover:rounded-full"
                           @click="showHide"
-                          to="/parenting"
+                          to="/parenting/0-6-bulan"
                           >0-6 BULAN</NuxtLink
                         >
                       </li>
@@ -146,7 +146,7 @@ function showHide() {
                         <NuxtLink
                           class="group-hover:underline group-hover:rounded-full"
                           @click="showHide"
-                          to="/parenting"
+                          to="/parenting/7-12-bulan"
                           >7-12 BULAN</NuxtLink
                         >
                       </li>
@@ -154,16 +154,16 @@ function showHide() {
                         <NuxtLink
                           class="group-hover:underline group-hover:rounded-full"
                           @click="showHide"
-                          to="/parenting"
-                          >1-3 BULAN</NuxtLink
+                          to="/parenting/1-3-tahun"
+                          >1-3 Tahun</NuxtLink
                         >
                       </li>
                       <li class="group px-4 py-3">
                         <NuxtLink
                           class="group-hover:underline group-hover:rounded-full"
                           @click="showHide"
-                          to="/parenting"
-                          >4-6 BULAN</NuxtLink
+                          to="/parenting/4-6-tahun"
+                          >4-6 Tahun</NuxtLink
                         >
                       </li>
                     </ul>
