@@ -13,9 +13,20 @@ const { data: articles } = await useAsyncData("articles", () =>
 
     <Swiper
       :modules="[SwiperPagination]"
-      :slides-per-view="4"
+      :slides-per-view="1"
       :space-between="24"
       :pagination="true"
+      :breakpoints="{
+        425: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+      }"
     >
       <SwiperSlide v-for="slide in 5" :key="slide" class="pb-10">
         <CardArticle />
