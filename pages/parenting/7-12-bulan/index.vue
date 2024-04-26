@@ -1,7 +1,11 @@
 <script setup>
 const { data: parenting } = await useAsyncData("parenting", () =>
-  queryContent("/parenting").sort({ publishedAt: -1 }).find()
+  queryContent("/parenting/7-12-bulan").sort({ publishedAt: -1 }).find()
 );
+
+useHead({
+  title: "Parenting",
+});
 </script>
 <template>
   <main>

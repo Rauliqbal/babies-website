@@ -36,8 +36,8 @@ useHead({
           {{ data.parenting.title }}
         </h1>
 
-        <div class="flex items-center gap-1 mt-4">
-          <p class="font-semibold">
+        <div class="flex flex-col md:flex-row md:items-center gap-1 mt-4">
+          <p class="font-semibold text-sm">
             Oleh
             <NuxtLink
               :to="data.parenting.author.profileUrl"
@@ -46,9 +46,9 @@ useHead({
               >{{ data.parenting.author.name }}</NuxtLink
             >
           </p>
-          <span class="text-gray-400 text-xl">|</span>
+          <span class="text-gray-400 text-xl hidden md:block">|</span>
 
-          <p>
+          <p class="text-sm">
             Diterbitkan pada
             <span>{{ showFormattedDate(data.parenting.publishedAt) }}</span>
           </p>
@@ -56,7 +56,7 @@ useHead({
       </header>
       <section class="grid grid-cols-1 md:grid-cols-7 gap-6 items-start">
         <aside
-          class="col-span-4 md:col-span-2 sticky top-28 bg-[#FFE2F4] rounded-2xl"
+          class="col-span-4 md:col-span-2 md:sticky top-28 bg-[#FFE2F4] rounded-2xl"
         >
           <Toc :links="data.parenting.body.toc.links" />
         </aside>

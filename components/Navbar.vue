@@ -7,20 +7,11 @@ function showHide() {
 <template>
   <header class="fixed inset-x-0 z-30 bg-white transition-all">
     <div class="container">
-      <div class="flex items-center justify-between">
+      <div class="flex items-center justify-center md:justify-between">
         <div class="py-2 flex gap-8">
           <!-- Logo -->
-          <NuxtLink class="flex items-center gap-2" to="/">
-            <img
-              class="h-14 hidden lg:block"
-              src="~/assets/images/logo-babies.svg"
-              alt="PT. Venturium System Indonesia (VenSys) was established in 2003"
-            />
-            <img
-              class="h-14 lg:hidden"
-              src="~/assets/images/logo-babies.svg"
-              alt="PT. Venturium System Indonesia (VenSys) was established in 2003"
-            />
+          <NuxtLink class="hidden md:block" to="/">
+            <img src="~/assets/images/logo-babies.svg" alt="Babies Buddies" />
           </NuxtLink>
           <!-- Navigation Lik -->
           <div class="flex items-center">
@@ -55,7 +46,7 @@ function showHide() {
                       class="peer py-4 md:py-6 uppercase font-semibold tracking-wide transition-all ease-out duration-200 text-gray-800 before:transition-all before:duration-200 relative before:w-0 md:hover:before:w-full before:h-[2px] before:bottom-5 before:block before:absolute before:bg-primary"
                     >
                       <div class="flex items-center gap-1">
-                        <p>Kebutuhan bayi & anak</p>
+                        <p>Parenting</p>
                         <!-- Icon Dropdown -->
                         <svg
                           width="10"
@@ -210,6 +201,17 @@ function showHide() {
               </div>
             </div>
           </div>
+        </div>
+
+        <!-- Logo -->
+        <NuxtLink class="md:hidden mx-auto" to="/">
+          <img src="~/assets/images/logo-babies.svg" alt="Babies Buddies" />
+        </NuxtLink>
+
+        <!-- Login/Search -->
+        <div class="flex items-center gap-4">
+          <NuxtLink to="#"><i class="ai-search text-2xl"></i></NuxtLink>
+          <NuxtLink to="#"><i class="ai-person text-2xl"></i></NuxtLink>
         </div>
       </div>
     </div>
