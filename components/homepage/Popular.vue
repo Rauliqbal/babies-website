@@ -1,6 +1,6 @@
 <script setup>
 const { data: articles } = await useAsyncData("articles", () =>
-  queryContent("/article").sort({ publishedAt: -1 }).find()
+  queryContent("/parenting").sort({ publishedAt: -1 }).find()
 );
 </script>
 <template>
@@ -29,13 +29,28 @@ const { data: articles } = await useAsyncData("articles", () =>
         },
       }"
     >
-      <SwiperSlide v-for="slide in 5" :key="slide" class="pb-10">
-        <LazyCardArticle />
+      <SwiperSlide v-for="item in articles" :key="slide" class="pb-10">
+        <LazyCardArticle
+          :url="item._path"
+          :key="item.id"
+          :thumbnail="item.featureImage"
+          :title="item.title"
+          :author="item.author.name"
+          :background="item.background"
+        />
       </SwiperSlide>
     </Swiper>
 
     <div class="grid grid-cols-2 gap-4 md:hidden">
-      <LazyCardArticle v-for="slide in 4" :key="slide" />
+      <LazyCardArticle
+        v-for="item in articles"
+        :url="item._path"
+        :key="item.id"
+        :thumbnail="item.featureImage"
+        :title="item.title"
+        :author="item.author.name"
+        :background="item.background"
+      />
     </div>
   </section>
 </template>

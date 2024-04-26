@@ -16,7 +16,7 @@ defineProps({
       <img :src="thumbnail" :alt="'Thumbnail' + title" class="rounded-lg" />
 
       <h4
-        class="text-sm mt-1 md:mt-4 md:text-base text-center font-semibold capitalize"
+        class="text-sm mt-1 md:mt-4 md:text-base text-center font-semibold capitalize line-clamp-2"
       >
         {{ title }}
       </h4>

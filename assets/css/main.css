@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    @apply scroll-m-24;
+  }
+  html {
+    @apply scroll-smooth;
+  }
   body {
     @apply font-poppins;
   }

@@ -10,7 +10,7 @@ function showHide() {
       <div class="flex items-center justify-center md:justify-between">
         <div class="py-2 flex gap-8">
           <!-- Logo -->
-          <NuxtLink class="hidden md:block" to="/">
+          <NuxtLink class="hidden lg:flex items-center" to="/">
             <img src="~/assets/images/logo-babies.svg" alt="Babies Buddies" />
           </NuxtLink>
           <!-- Navigation Lik -->
@@ -26,7 +26,7 @@ function showHide() {
               class="relative peer-checked:hamburger z-30 block cursor-pointer lg:hidden"
             >
               <span
-                class="duration-200 inline-block w-7 focus:w-0 h-1 bg-black after:bg-black before:bg-black rounded-xl after:rounded-xl before:rounded-xl"
+                class="duration-200 inline-block w-6 focus:w-0 h-1 bg-black after:bg-black before:bg-black rounded-xl after:rounded-xl before:rounded-xl"
               ></span>
             </label>
             <div
@@ -38,7 +38,7 @@ function showHide() {
             >
               <div class="flex flex-col lg:items-center lg:flex-row h-full">
                 <ul
-                  class="bg-white dark:md:bg-transparent lg:bg-transparent flex items-center lg:py-0 pt-20 pb-[38rem] lg:gap-8 flex-col lg:flex-row"
+                  class="bg-white lg:bg-transparent flex items-center lg:py-0 pt-20 pb-[38rem] lg:gap-8 flex-col lg:flex-row"
                 >
                   <!-- Parenting Link -->
                   <li class="relative">
@@ -63,11 +63,11 @@ function showHide() {
                       </div>
                     </div>
                     <ul
-                      class="hidden z-10 -left-20 md:-left-6 top-10 md:top-16 text-sm absolute items-center peer-hover:flex hover:flex w-[160px] flex-col rounded overflow-hidden bg-[#FFE2F4] shadow-md"
+                      class="hidden z-10 top-10 md:top-16 text-sm absolute items-center peer-hover:flex hover:flex w-[160px] flex-col rounded overflow-hidden bg-[#FFE2F4] shadow-md"
                     >
                       <li class="group px-4 py-3">
                         <NuxtLink
-                          class="group-hover:underline group-hover:rounded-full"
+                          class="group-hover:underline group-hover:font-semibold transition-all"
                           @click="showHide"
                           to="/parenting/0-6-bulan"
                           >0-6 BULAN</NuxtLink
@@ -75,7 +75,7 @@ function showHide() {
                       </li>
                       <li class="group px-4 py-3">
                         <NuxtLink
-                          class="group-hover:underline group-hover:rounded-full"
+                          class="group-hover:underline group-hover:font-semibold transition-all"
                           @click="showHide"
                           to="/parenting/7-12-bulan"
                           >7-12 BULAN</NuxtLink
@@ -83,7 +83,7 @@ function showHide() {
                       </li>
                       <li class="group px-4 py-3">
                         <NuxtLink
-                          class="group-hover:underline group-hover:rounded-full"
+                          class="group-hover:underline group-hover:font-semibold transition-all"
                           @click="showHide"
                           to="/parenting/1-3-tahun"
                           >1-3 Tahun</NuxtLink
@@ -91,7 +91,7 @@ function showHide() {
                       </li>
                       <li class="group px-4 py-3">
                         <NuxtLink
-                          class="group-hover:underline group-hover:rounded-full"
+                          class="group-hover:underline group-hover:font-semibold transition-all"
                           @click="showHide"
                           to="/parenting/4-6-tahun"
                           >4-6 Tahun</NuxtLink
@@ -106,7 +106,7 @@ function showHide() {
                       class="peer py-4 md:py-6 uppercase font-semibold tracking-wide transition-all ease-out duration-200 text-gray-800 before:transition-all before:duration-200 relative before:w-0 md:hover:before:w-full before:h-[2px] before:bottom-5 before:block before:absolute before:bg-primary"
                     >
                       <div class="flex items-center gap-1">
-                        <p>Kebutuhan bayi & anak</p>
+                        <p>Kebutuhan Bayi & Anak</p>
                         <!-- Icon Dropdown -->
                         <svg
                           width="10"
@@ -123,38 +123,46 @@ function showHide() {
                       </div>
                     </div>
                     <ul
-                      class="hidden z-10 -left-20 md:-left-6 top-10 md:top-16 text-sm absolute items-center peer-hover:flex hover:flex w-[160px] flex-col rounded overflow-hidden bg-[#FFE2F4] shadow-md"
+                      class="hidden z-10 top-10 md:top-16 text-sm absolute items-center peer-hover:flex hover:flex w-full flex-col rounded overflow-hidden bg-[#FFE2F4] shadow-md"
                     >
                       <li class="group px-4 py-3">
                         <NuxtLink
-                          class="group-hover:underline group-hover:rounded-full"
+                          class="group-hover:underline group-hover:font-semibold transition-all"
                           @click="showHide"
-                          to="/parenting/0-6-bulan"
-                          >0-6 BULAN</NuxtLink
+                          to="/kebutuhan-anak"
+                          >Makanan & Minuman</NuxtLink
                         >
                       </li>
                       <li class="group px-4 py-3">
                         <NuxtLink
-                          class="group-hover:underline group-hover:rounded-full"
+                          class="group-hover:underline group-hover:font-semibold transition-all"
                           @click="showHide"
-                          to="/parenting/7-12-bulan"
-                          >7-12 BULAN</NuxtLink
+                          to="/kebutuhan-anak"
+                          >Perawatan</NuxtLink
                         >
                       </li>
                       <li class="group px-4 py-3">
                         <NuxtLink
-                          class="group-hover:underline group-hover:rounded-full"
+                          class="group-hover:underline group-hover:font-semibold transition-all"
                           @click="showHide"
-                          to="/parenting/1-3-tahun"
-                          >1-3 Tahun</NuxtLink
+                          to="/kebutuhan-anak"
+                          >Kesehatan</NuxtLink
                         >
                       </li>
                       <li class="group px-4 py-3">
                         <NuxtLink
-                          class="group-hover:underline group-hover:rounded-full"
+                          class="group-hover:underline group-hover:font-semibold transition-all"
                           @click="showHide"
-                          to="/parenting/4-6-tahun"
-                          >4-6 Tahun</NuxtLink
+                          to="/kebutuhan-anak"
+                          >Mainan</NuxtLink
+                        >
+                      </li>
+                      <li class="group px-4 py-3">
+                        <NuxtLink
+                          class="group-hover:underline group-hover:font-semibold transition-all"
+                          @click="showHide"
+                          to="/kebutuhan-anak"
+                          >Buku</NuxtLink
                         >
                       </li>
                     </ul>
@@ -204,7 +212,7 @@ function showHide() {
         </div>
 
         <!-- Logo -->
-        <NuxtLink class="md:hidden mx-auto" to="/">
+        <NuxtLink class="flex items-center lg:hidden mx-auto" to="/">
           <img src="~/assets/images/logo-babies.svg" alt="Babies Buddies" />
         </NuxtLink>
 
@@ -227,7 +235,7 @@ function showHide() {
   transition-property: margin, transform;
   content: "";
   position: absolute;
-  width: 20px;
+  width: 24px;
   height: 4px;
 }
 
