@@ -21,34 +21,34 @@ let activeTab = ref("tab2");
         </p>
       </header>
 
-      <div>
-        <div class="flex justify-center gap-6 font-semibold">
+      <div class="mt-8">
+        <div class="flex justify-center gap-2 md:gap-6 font-semibold">
           <button
-            class="uppercase font-semibold tracking-wide transition-all ease-out duration-200 text-gray-800 before:transition-all before:duration-200 relative before:w-0 md:hover:before:w-full before:h-[2px] before:bottom-0 before:block before:absolute before:bg-primary"
+            class="uppercase font-semibold text-[8px] sm:text-sm md:text-base tracking-wide transition-all ease-out duration-200 text-gray-800 before:transition-all before:duration-200 relative before:w-0 hover:before:w-full before:h-[2px] before:bottom-0 before:block before:absolute before:bg-primary"
             @click="activeTab = 'tab1'"
           >
             Makanan & Minuman
           </button>
           <button
-            class="uppercase font-semibold tracking-wide transition-all ease-out duration-200 text-gray-800 before:transition-all before:duration-200 relative before:w-0 md:hover:before:w-full before:h-[2px] before:bottom-0 before:block before:absolute before:bg-primary"
+            class="uppercase font-semibold text-[8px] sm:text-sm md:text-base tracking-wide transition-all ease-out duration-200 text-gray-800 before:transition-all before:duration-200 relative before:w-0 hover:before:w-full before:h-[2px] before:bottom-0 before:block before:absolute before:bg-primary"
             @click="activeTab = 'tab2'"
           >
             Perawatan
           </button>
           <button
-            class="uppercase font-semibold tracking-wide transition-all ease-out duration-200 text-gray-800 before:transition-all before:duration-200 relative before:w-0 md:hover:before:w-full before:h-[2px] before:bottom-0 before:block before:absolute before:bg-primary"
+            class="uppercase font-semibold text-[8px] sm:text-sm md:text-base tracking-wide transition-all ease-out duration-200 text-gray-800 before:transition-all before:duration-200 relative before:w-0 hover:before:w-full before:h-[2px] before:bottom-0 before:block before:absolute before:bg-primary"
             @click="activeTab = 'tab3'"
           >
             Kesehatan
           </button>
           <button
-            class="uppercase font-semibold tracking-wide transition-all ease-out duration-200 text-gray-800 before:transition-all before:duration-200 relative before:w-0 md:hover:before:w-full before:h-[2px] before:bottom-0 before:block before:absolute before:bg-primary"
+            class="uppercase font-semibold text-[8px] sm:text-sm md:text-base tracking-wide transition-all ease-out duration-200 text-gray-800 before:transition-all before:duration-200 relative before:w-0 hover:before:w-full before:h-[2px] before:bottom-0 before:block before:absolute before:bg-primary"
             @click="activeTab = 'tab4'"
           >
             Mainan
           </button>
           <button
-            class="uppercase font-semibold tracking-wide transition-all ease-out duration-200 text-gray-800 before:transition-all before:duration-200 relative before:w-0 md:hover:before:w-full before:h-[2px] before:bottom-0 before:block before:absolute before:bg-primary"
+            class="uppercase font-semibold text-[8px] sm:text-sm md:text-base tracking-wide transition-all ease-out duration-200 text-gray-800 before:transition-all before:duration-200 relative before:w-0 hover:before:w-full before:h-[2px] before:bottom-0 before:block before:absolute before:bg-primary"
             @click="activeTab = 'tab5'"
           >
             Buku
@@ -62,13 +62,10 @@ let activeTab = ref("tab2");
             <!-- Perawatan Content Here -->
             <Swiper
               :modules="[SwiperPagination]"
-              :slides-per-view="1"
+              :slides-per-view="2"
               :space-between="24"
               :pagination="true"
               :breakpoints="{
-                425: {
-                  slidesPerView: 2,
-                },
                 768: {
                   slidesPerView: 3,
                 },

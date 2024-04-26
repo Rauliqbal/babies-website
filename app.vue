@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <NuxtPage class="py-28" />
+  <NuxtPage class="py-10 md:py-28" />
 </template>
 
 <style>
