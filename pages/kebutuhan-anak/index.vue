@@ -74,8 +74,17 @@ let activeTab = ref("tab2");
                 },
               }"
             >
-              <SwiperSlide v-for="slide in 5" :key="slide" class="pt-1 pb-10">
-                <CardProduct />
+              <SwiperSlide
+                v-for="item in MAKANMINUM"
+                :key="slide"
+                class="px-1 pt-1 pb-10"
+              >
+                <CardProduct
+                  :name="item.name"
+                  :image="item.image"
+                  :qty="item.qty"
+                  :to="item.productUrl"
+                />
               </SwiperSlide>
             </Swiper>
           </div>

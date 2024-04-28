@@ -1,6 +1,6 @@
 <script setup>
 const { data: parenting } = await useAsyncData("parenting", () =>
-  queryContent("/parenting/7-12-bulan").sort({ publishedAt: -1 }).find()
+  queryContent("/parenting/1-3-tahun").sort({ publishedAt: -1 }).find()
 );
 
 useHead({
@@ -32,8 +32,38 @@ useHead({
         <div class="w-full h-1 bg-primary my-8"></div>
       </header>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
-        <CardArticle
+      <Swiper
+        class="!hidden md:!block"
+        :modules="[SwiperPagination]"
+        :slides-per-view="1"
+        :space-between="24"
+        :pagination="true"
+        :breakpoints="{
+          425: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+        }"
+      >
+        <SwiperSlide v-for="item in parenting" class="pb-10">
+          <LazyCardArticle
+            :url="item._path"
+            :key="item.id"
+            :thumbnail="item.featureImage"
+            :title="item.title"
+            :author="item.author.name"
+            :background="item.background"
+          />
+        </SwiperSlide>
+      </Swiper>
+
+      <div class="grid grid-cols-2 gap-4 md:hidden">
+        <LazyCardArticle
           v-for="item in parenting"
           :url="item._path"
           :key="item.id"
@@ -42,8 +72,6 @@ useHead({
           :author="item.author.name"
           :background="item.background"
         />
-
-        <!-- {{ parenting }} -->
       </div>
     </section>
   </main>

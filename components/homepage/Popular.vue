@@ -29,7 +29,7 @@ const { data: articles } = await useAsyncData("articles", () =>
         },
       }"
     >
-      <SwiperSlide v-for="item in articles" :key="slide" class="pb-10">
+      <SwiperSlide v-for="item in articles.slice(0, 8)" class="pb-10">
         <LazyCardArticle
           :url="item._path"
           :key="item.id"
@@ -43,7 +43,7 @@ const { data: articles } = await useAsyncData("articles", () =>
 
     <div class="grid grid-cols-2 gap-4 md:hidden">
       <LazyCardArticle
-        v-for="item in articles"
+        v-for="item in articles.slice(0, 8)"
         :url="item._path"
         :key="item.id"
         :thumbnail="item.featureImage"

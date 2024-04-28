@@ -79,4 +79,10 @@
       rgb(255, 255, 255, 1) 5.76102px -1.67649px 0px,
       rgb(255, 255, 255, 1) 5.95932px -0.697531px 0px;
   }
+  .bg-card-1 {
+    @apply bg-[#FFE2F4];
+  }
+  .bg-card-2 {
+    @apply bg-[#CCE4F6];
+  }
 }

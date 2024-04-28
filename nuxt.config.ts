@@ -13,7 +13,20 @@ export default defineNuxtConfig({
     head: {
       meta: [
         {
+          name: "title",
+          content: "Babies Buddies",
+        },
+        {
           name: "description",
+          content:
+            "platform online yang didedikasikan untuk para orang tua, terutama dalam fase penting merawat dan mendidik anak-anak mereka, khususnya untuk bayi dan balita dengan rentang usia 0-6 tahun.",
+        },
+        {
+          name: "og:title",
+          content: "Babies Buddies",
+        },
+        {
+          name: "og:description",
           content:
             "platform online yang didedikasikan untuk para orang tua, terutama dalam fase penting merawat dan mendidik anak-anak mereka, khususnya untuk bayi dan balita dengan rentang usia 0-6 tahun.",
         },
