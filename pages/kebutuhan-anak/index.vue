@@ -1,5 +1,9 @@
 <script setup>
-let activeTab = ref("tab2");
+let activeTab = ref("tab1");
+
+useHead({
+  title: "Kebutuhan Bayi & Anak",
+});
 </script>
 <template>
   <main>
@@ -57,9 +61,7 @@ let activeTab = ref("tab2");
 
         <div class="mt-10">
           <!-- Makanan & Minuman Content Here -->
-          <div v-if="activeTab === 'tab1'">Makan & Minum</div>
-          <div v-if="activeTab === 'tab2'">
-            <!-- Perawatan Content Here -->
+          <div v-if="activeTab === 'tab1'">
             <Swiper
               :modules="[SwiperPagination]"
               :slides-per-view="2"
@@ -82,15 +84,136 @@ let activeTab = ref("tab2");
                 <CardProduct
                   :name="item.name"
                   :image="item.image"
-                  :qty="item.qty"
-                  :to="item.productUrl"
+                  :size="item.size"
+                  :url="'makan-minum/' + item.id"
                 />
               </SwiperSlide>
             </Swiper>
           </div>
-          <div v-if="activeTab === 'tab3'">Kesehatan Content Here</div>
-          <div v-if="activeTab === 'tab4'">Mainan Content Here</div>
-          <div v-if="activeTab === 'tab5'">Buku Content Here</div>
+
+          <!-- Perawatan Content Here -->
+          <div v-if="activeTab === 'tab2'">
+            <Swiper
+              :modules="[SwiperPagination]"
+              :slides-per-view="2"
+              :space-between="24"
+              :pagination="true"
+              :breakpoints="{
+                768: {
+                  slidesPerView: 3,
+                },
+                1024: {
+                  slidesPerView: 4,
+                },
+              }"
+            >
+              <SwiperSlide
+                v-for="item in PERAWATAN"
+                :key="slide"
+                class="px-1 pt-1 pb-10"
+              >
+                <CardProduct
+                  :name="item.name"
+                  :image="item.image"
+                  :size="item.size"
+                  :url="'perawatan/' + item.id"
+                />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+
+          <!-- Kesehatan Content Here -->
+          <div v-if="activeTab === 'tab3'">
+            <Swiper
+              :modules="[SwiperPagination]"
+              :slides-per-view="2"
+              :space-between="24"
+              :pagination="true"
+              :breakpoints="{
+                768: {
+                  slidesPerView: 3,
+                },
+                1024: {
+                  slidesPerView: 4,
+                },
+              }"
+            >
+              <SwiperSlide
+                v-for="item in KESEHATAN"
+                :key="slide"
+                class="px-1 pt-1 pb-10"
+              >
+                <CardProduct
+                  :name="item.name"
+                  :image="item.image"
+                  :size="item.size"
+                  :url="'kesehatan/' + item.id"
+                />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+
+          <!-- Mainan Content Here -->
+          <div v-if="activeTab === 'tab4'">
+            <Swiper
+              :modules="[SwiperPagination]"
+              :slides-per-view="2"
+              :space-between="24"
+              :pagination="true"
+              :breakpoints="{
+                768: {
+                  slidesPerView: 3,
+                },
+                1024: {
+                  slidesPerView: 4,
+                },
+              }"
+            >
+              <SwiperSlide
+                v-for="item in MAINAN"
+                :key="slide"
+                class="px-1 pt-1 pb-10"
+              >
+                <CardProduct
+                  :name="item.name"
+                  :image="item.image"
+                  :size="item.size"
+                  :url="'mainan/' + item.id"
+                />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+
+          <!-- Buku Content Here -->
+          <div v-if="activeTab === 'tab5'">
+            <Swiper
+              :modules="[SwiperPagination]"
+              :slides-per-view="2"
+              :space-between="24"
+              :pagination="true"
+              :breakpoints="{
+                768: {
+                  slidesPerView: 3,
+                },
+                1024: {
+                  slidesPerView: 4,
+                },
+              }"
+            >
+              <SwiperSlide
+                v-for="item in BUKU"
+                :key="slide"
+                class="px-1 pt-1 pb-10"
+              >
+                <CardProduct
+                  :name="item.name"
+                  :image="item.image"
+                  :size="item.size"
+                  :url="'buku/' + item.id"
+                />
+              </SwiperSlide>
+            </Swiper>
+          </div>
         </div>
       </div>
     </section>

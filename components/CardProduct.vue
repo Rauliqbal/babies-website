@@ -2,12 +2,12 @@
 defineProps({
   image: String,
   name: String,
-  qty: String,
+  size: String,
   url: String,
 });
 </script>
 <template>
-  <NuxtLink :to="url" target="_blank">
+  <NuxtLink :to="'/kebutuhan-anak/' + url">
     <div class="inline-flex flex-col items-center gap-4">
       <div
         class="bg-card-1 rounded-3xl overflow-hidden ring-2 ring-black bg-card-2"
@@ -25,8 +25,10 @@ defineProps({
         </div>
 
         <div class="bg-[#FD6085] rounded-full mt-1">
-          <h4 class="text-sm font-semibold text-white px-4 py-2 text-center">
-            {{ qty }}
+          <h4
+            class="text-[8px] md:text-sm font-semibold text-white px-4 py-2 text-center"
+          >
+            {{ size }}
           </h4>
         </div>
       </div>
