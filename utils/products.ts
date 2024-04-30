@@ -277,3 +277,26 @@ export const BUKU = [
     size: "30 Pages",
   },
 ];
+
+export const PERSON = [
+  {
+    name: "Kania khansa Bakri",
+    nim: "1101621072",
+    image: "kania-khansa-bakri.png",
+  },
+  {
+    name: "nina nuria khalisha",
+    nim: "1101621027",
+    image: "nina-nuria-khalisha.png",
+  },
+  {
+    name: "revi mariska",
+    nim: "1101621003",
+    image: "revi-mariska.png",
+  },
+  {
+    name: "vina regina melati",
+    nim: "1101621075",
+    image: "vina-regina-melati.png",
+  },
+];

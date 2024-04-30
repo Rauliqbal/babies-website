@@ -197,13 +197,55 @@ function showHide() {
                     >
                   </li>
                   <!-- Tentang kami link -->
-                  <li>
-                    <NuxtLink
+                  <li class="relative">
+                    <div
                       class="peer py-4 md:py-6 uppercase font-semibold tracking-wide transition-all ease-out duration-200 text-gray-800 before:transition-all before:duration-200 relative before:w-0 md:hover:before:w-full before:h-[2px] before:bottom-5 before:block before:absolute before:bg-primary"
-                      @click="showHide"
-                      to="/tentang-kami"
-                      >Tentang Kami</NuxtLink
                     >
+                      <div class="flex items-center gap-1">
+                        <p>Tentang Kami</p>
+                        <!-- Icon Dropdown -->
+                        <svg
+                          width="10"
+                          height="10"
+                          viewBox="0 0 10 10"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10 4.78261V0L5.2381 4.34783L0 0V5.21739L5.2381 10L10 4.78261Z"
+                            fill="#F86ABA"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <ul
+                      class="hidden z-10 top-10 md:top-16 text-sm absolute items-center peer-hover:flex hover:flex w-full flex-col rounded overflow-hidden bg-[#FFE2F4] shadow-md"
+                    >
+                      <li class="group px-4 py-3">
+                        <NuxtLink
+                          class="group-hover:underline group-hover:font-semibold transition-all capitalize"
+                          @click="showHide"
+                          to="/visi-misi"
+                          >visi & Misi</NuxtLink
+                        >
+                      </li>
+                      <li class="group px-4 py-3">
+                        <NuxtLink
+                          class="group-hover:underline group-hover:font-semibold transition-all capitalize"
+                          @click="showHide"
+                          to="/profil-tim"
+                          >Profil Tim</NuxtLink
+                        >
+                      </li>
+                      <li class="group px-4 py-3">
+                        <NuxtLink
+                          class="group-hover:underline group-hover:font-semibold transition-all capitalize"
+                          @click="showHide"
+                          to="/kontak"
+                          >Kontak</NuxtLink
+                        >
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </div>
