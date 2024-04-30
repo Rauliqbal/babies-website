@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+useHead({
+  title: "Kontak Kami",
+});
+</script>
 <template>
   <main>
     <section class="container">

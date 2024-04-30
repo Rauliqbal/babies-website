@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+useHead({
+  title: "Visi & Misi",
+});
+</script>
 <template>
   <main>
     <section class="container">
