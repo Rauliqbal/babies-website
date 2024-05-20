@@ -278,6 +278,82 @@ export const BUKU = [
   },
 ];
 
+export const DAYCARE = [
+  {
+    id: 0,
+    name: "Apple Grow Daycare",
+    desc: "",
+    image: [
+      "https://lh3.googleusercontent.com/p/AF1QipOoWYpPuJkBCTsM12y8UNh1kGxmXsDZxa_D6nqx=s680-w680-h510",
+      "https://down-id.img.susercontent.com/file/id-11134201-7r98s-lp7koxufd1n2f9",
+      "https://down-id.img.susercontent.com/file/id-11134207-7r98s-lro9cw2j841pb4",
+    ],
+    facilities: [
+      "Ruang Bermain",
+      "Ruang Belajar",
+      "Pojok Shalat",
+      "Ruang Tidur",
+      "Kamar mandi",
+      "Toilet",
+    ],
+    location: "Jakarta Selatan",
+    url: "https://applegrowdaycare.com/",
+    rating: "5.0",
+    background: "bg-card-1",
+  },
+  {
+    id: 1,
+    name: "LittleBee Montessori School & Daycare",
+    desc: "",
+    image: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIx4IG79Gf41pImP153gVrPxrJeDE7zrohZTKOXDGBEQ&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjvD2KQGKkaVH2uukVWHZW9U403-dy9uo0sEj3sYbVCA&s",
+      "https://www.lilinbangsa.sch.id/wp-content/uploads/2018/11/Little-Bee-Kindergarten-Classroom-Activities-7-1024x683.jpg",
+    ],
+    facilities: [
+      "Regular Service",
+      "Home Based Learning",
+      "Catering",
+      "Caregiver to Home",
+      "Daycate at Your Office",
+    ],
+    location: "Jakarta Selatan",
+    url: "https://www.littlebee-montessori.id/",
+    rating: "4.7",
+    background: "bg-card-2",
+  },
+  {
+    id: 2,
+    name: "",
+    desc: "",
+    image: [
+      "https://down-id.img.susercontent.com/file/id-11134201-23030-n92npvf34qov1d",
+      "https://down-id.img.susercontent.com/file/id-11134201-7r98s-lp7koxufd1n2f9",
+      "https://down-id.img.susercontent.com/file/id-11134207-7r98s-lro9cw2j841pb4",
+    ],
+    facilities: [""],
+    location: "",
+    url: "",
+    rating: "5.0",
+    background: "bg-card-1",
+  },
+  {
+    id: 3,
+    name: "",
+    desc: "",
+    image: [
+      "https://down-id.img.susercontent.com/file/id-11134201-23030-n92npvf34qov1d",
+      "https://down-id.img.susercontent.com/file/id-11134201-7r98s-lp7koxufd1n2f9",
+      "https://down-id.img.susercontent.com/file/id-11134207-7r98s-lro9cw2j841pb4",
+    ],
+    facilities: [""],
+    location: "",
+    url: "",
+    rating: "5.0",
+    background: "bg-card-1",
+  },
+];
+
 export const PERSON = [
   {
     name: "Kania khansa Bakri",
