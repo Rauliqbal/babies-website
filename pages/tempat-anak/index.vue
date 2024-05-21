@@ -76,7 +76,7 @@ useHead({
                   :location="item.location"
                   :background="item.background"
                   :rating="item.rating"
-                  :url="'daycare/' + item.id"
+                  :url="'/tempat-anak/daycare/' + item.id"
                 />
               </SwiperSlide>
             </Swiper>
@@ -110,7 +110,7 @@ useHead({
                   :location="item.location"
                   :background="item.background"
                   :rating="item.rating"
-                  :url="'taman-bermain/' + item.id"
+                  :url="'/tempat-anak/taman-bermain/' + item.id"
                 />
               </SwiperSlide>
             </Swiper>
@@ -133,15 +133,18 @@ useHead({
               }"
             >
               <SwiperSlide
-                v-for="item in KESEHATAN"
+                v-for="item in PERPUSTAKAAN"
                 :key="item"
                 class="px-1 pt-1 pb-10"
               >
-                <CardProduct
+                <CardArticle2
                   :name="item.name"
                   :image="item.image"
                   :size="item.size"
-                  :url="'kesehatan/' + item.id"
+                  :location="item.location"
+                  :background="item.background"
+                  :rating="item.rating"
+                  :url="'/tempat-anak/perpustakaan/' + item.id"
                 />
               </SwiperSlide>
             </Swiper>

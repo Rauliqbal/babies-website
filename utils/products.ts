@@ -366,6 +366,96 @@ export const DAYCARE = [
   },
 ];
 
+export const PERPUSTAKAAN = [
+  {
+    id: "0",
+    name: "Rimba Baca",
+    desc: "",
+    image: [
+      "https://asset.kompas.com/crops/dCOui7LvSmL16x1PsK4EDTVrnhw=/0x0:1796x1197/750x500/data/photo/2023/07/02/64a186336c6f5.jpg",
+      "https://asset.kompas.com/crops/1-tr-rOI93duAzh5tSBt9SRRBPg=/0x0:1799x1199/750x500/data/photo/2023/07/02/64a1868a2e3f6.jpg",
+      "https://www.len-diary.com/wp-content/uploads/2022/06/perpustakaan-rimba-baca-1024x768.jpg",
+    ],
+    facilities: [
+      "Ruang Baca",
+      "Babies Corner",
+      "Art Room Yang Disediakan Untuk Kegiatan Kerajinan Tangan",
+      "Musholla",
+      "Ruang Tunggu",
+      "Ruang Menyusui",
+      "Ruang Koleksi Komik",
+      "Dan Taman Kecil Di Belakang.",
+    ],
+    location: "Jakarta Selatan",
+    url: "https://www.rimbabaca.com/go/landing/index.php",
+    rating: "4.8",
+    background: "bg-card-1",
+  },
+  {
+    id: "1",
+    name: "Perpustakaan Umum Kota Depok",
+    desc: "",
+    image: [
+      "https://assets.isu.pub/document-structure/210416063035-36e85402802e48da3a02a1f03a1452b3/v1/3e85d5cc6dc06f4a158d5203e0bc9c0c.jpg",
+      "https://berita.depok.go.id/storage/posts//wuz4eNfcCrh4pcojIb044h0TmUWv7MsyHpMlRQV4.webp",
+      "https://assets.isu.pub/document-structure/210416063035-36e85402802e48da3a02a1f03a1452b3/v1/7789aa7194824609a2d8e85319b5532c.jpg",
+    ],
+    facilities: [
+      "L1. terdapat ruang Aula, ruang balita, dan control room.",
+      "L2. merupakan ruang layanan perpustakaan yang terdiri dari ruang koleksi umum dan anak, ruang baca, dan ruang sirkulasi (peminjaman dan pengembalian).",
+      "L3. terdapat ruang teater dan ruang rapat.",
+    ],
+    location: "Depok",
+    url: "https://www.instagram.com/perpustakaanumumkotadepok/",
+    rating: "4.5",
+    background: "bg-card-2",
+  },
+  {
+    id: "2",
+    name: "Perpustakaan Jakarta Timur",
+    desc: "",
+    image: [
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhU3WLeljFYaEEcg5DcIJv9ksYpfldTaoNywpitJL55SH9mw_C9wePox-0GQahOE5WDO6KjCVKgR_D8ZrKQbJJZlQ_-oDZwAgMUP_HoCXziKqHcYWDHcJgpDA40SpgBwaRtRd_4DicrRqUOKgI_i9-5w_Ypm6NpTH9HhLycrSO3uM768Q-bvbwqIU_7/s1920/5_20230517_113922_0001.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimXOl5_zXCVfAY_El2L3PLcnNrWqMHY8opCQfDxbnZf11kPGFLF4ToBRQfcDKOBKImYBionKrhehmtwJjIpTA9GLjzYItMfQW1M6DyRj8KKKSAoCpRROypdLZg2SJtAaq5_BnlvEW2dWelbFX4pRA21QvqMQrV-w3XOr8_-fYKrCDme-GiTJsJdQbE/s1920/7_20230517_113922_0003.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYN1HsKbFQ503NyjyTtN4COzpyYD8C37saxay-EvWI26IrKH8NSG0ntM8au9gN0iCWlKxjluhsCVcOTVaB4jQkI7MkVRJcgYO9Fn8hT6pWWbbJ-6oG_Gimi1BJq-QccoVBrc1oPIX9zwQCU-vA-W7_rK6xGKE0ItdGXwnPH6xXtZyFM5fGwHndPX5D/s1920/jpg_20230517_111441_0000.jpg",
+    ],
+    facilities: [
+      "Ruang baca umum",
+      "Ruang baca privat",
+      "Ruang tunggu",
+      "Ruang anak",
+      "Berbagai buku anak",
+      "Berbagai buku pengetahuan umum",
+      "Mainan anak",
+      "Toilet",
+    ],
+    location: "Jakarta Timur",
+    url: "https://www.instagram.com/perpusjkt_timur/",
+    rating: "4.8",
+    background: "bg-card-1",
+  },
+  {
+    id: "3",
+    name: "Bogor Regional Library",
+    desc: "",
+    image: [
+      "https://inilahonline.com/wp-content/uploads/2022/12/Perpustakaan-5-690x400.jpg",
+      "https://inilahonline.com/wp-content/uploads/2022/12/Perpustakaan-3-690x400.jpg",
+      "https://cdn0-production-images-kly.akamaized.net/cxLhkAvtgQR-bPpOQfNZeCaqR-A=/500x0/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4273729/original/053511500_1672118441-20221227-Perpustakaan-Galeri-Bogor-Aida-5.jpg",
+    ],
+    facilities: [
+      "Lobby, playground (1-5 years old), ruang anak, ruang laktasi, toilets",
+      "Ruang umum (2 rooms), ruang multimedia, ruang referensi, mushollas, toilets",
+      "Galleries, multifunction rooms, ruang walikota",
+      "Rooftop",
+    ],
+    location: "Bogor",
+    url: "https://www.instagram.com/perpusbogor/",
+    rating: "4.7",
+    background: "bg-card-1",
+  },
+];
+
 export const TAMAN_BERMAIN = [
   {
     id: "0",

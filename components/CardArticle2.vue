@@ -9,7 +9,7 @@ defineProps({
 });
 </script>
 <template>
-  <NuxtLink :to="'/tempat-anak/' + url">
+  <NuxtLink :to="url">
     <div class="flex flex-col items-center">
       <div class="relative overflow-hidden rounded-3xl">
         <img
