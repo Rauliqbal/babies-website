@@ -9,13 +9,13 @@ defineProps({
 });
 </script>
 <template>
-  <NuxtLink :to="url">
+  <NuxtLink :to="'/tempat-anak/' + url">
     <div class="flex flex-col items-center">
       <div class="relative overflow-hidden rounded-3xl">
         <img
           :src="image[0]"
           :alt="'image' + name"
-          class="aspect-[6/4] object-cover"
+          class="object-cover w-[400px] h-[200px]"
         />
         <div class="absolute w-full h-full top-0 left-0">
           <div

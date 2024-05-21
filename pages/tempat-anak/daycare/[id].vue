@@ -1,6 +1,6 @@
 <script setup>
 const { id } = useRoute().params;
-const data = BUKU[id];
+const data = DAYCARE[id];
 </script>
 <template>
   <main>
@@ -17,9 +17,10 @@ const data = BUKU[id];
       </header>
 
       <div class="grid md:grid-cols-2 gap-8 items-center mt-8">
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-2 gap-4 md:gap-5">
           <div class="col-span-2">
             <img
+              class="rounded-3xl overflow-hidden"
               src="https://lh3.googleusercontent.com/p/AF1QipOoWYpPuJkBCTsM12y8UNh1kGxmXsDZxa_D6nqx=s680-w680-h510"
               alt=""
             />
@@ -27,12 +28,14 @@ const data = BUKU[id];
 
           <div class="col-span-1">
             <img
+              class="rounded-3xl overflow-hidden"
               src="https://lh3.googleusercontent.com/p/AF1QipOoWYpPuJkBCTsM12y8UNh1kGxmXsDZxa_D6nqx=s680-w680-h510"
               alt=""
             />
           </div>
           <div class="col-span-1">
             <img
+              class="rounded-3xl overflow-hidden"
               src="https://lh3.googleusercontent.com/p/AF1QipOoWYpPuJkBCTsM12y8UNh1kGxmXsDZxa_D6nqx=s680-w680-h510"
               alt=""
             />
@@ -49,14 +52,22 @@ const data = BUKU[id];
           <h5 class="text-2xl font-semibold">Deskripsi:</h5>
           <p class="desc md:text-xl leading-relaxed mt-4">{{ data.desc }}</p>
 
-          <h5 class="text-2xl font-semibold mt-10">Ukuran:</h5>
-          <p class="desc md:text-xl mt-4">{{ data.size }}</p>
+          <h5 class="text-2xl font-semibold mt-10">Fasilitas:</h5>
+          <ul class="list-disc mt-4">
+            <li
+              class="desc md:text-xl ml-7"
+              v-for="item in data.facilities"
+              :key="item"
+            >
+              {{ item }}
+            </li>
+          </ul>
 
           <NuxtLink
-            :to="data.productUrl"
+            :to="data.url"
             target="_blank"
             class="hidden md:mt-10 md:inline-flex w-full md:w-auto justify-center px-10 py-2 text-xl bg-primary text-white font-bold rounded-full"
-            >Beli</NuxtLink
+            >More info</NuxtLink
           >
         </div>
       </div>
