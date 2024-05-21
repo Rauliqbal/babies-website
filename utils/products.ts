@@ -366,6 +366,100 @@ export const DAYCARE = [
   },
 ];
 
+export const TAMAN_BERMAIN = [
+  {
+    id: "0",
+    name: "Apple Bee Kid's playground",
+    desc: "",
+    image: [
+      "https://asset-a.grid.id/crop/0x0:0x0/x/photo/2022/10/01/whatsapp-image-2022-10-01-at-15-20221001032444.jpeg",
+      "https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/2001136963468/Apple%2520Bee%2520Playground%2520Mall%2520of%2520Indonesia%2520Tickets-b7af5bf1-8f48-47ba-a6e2-d4127ffb20bc.jpeg?tr=q-60,c-at_max,w-1280,h-720&_src=imagekit",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzCmi40-X-2dWZYty8XONJLqm3FzFj5IqvvfFPMqCO6w&s",
+    ],
+    facilities: [
+      "Trampolin",
+      "Kolam Bola",
+      "Mainan Lego",
+      "Sand Art, Dan lain-lain",
+    ],
+    location: "Jakarta Utara",
+    url: "https://linktr.ee/applebeeindo",
+    rating: "4.0",
+    background: "bg-card-1",
+  },
+  {
+    id: "1",
+    name: "Miniapolis",
+    desc: "",
+    image: [
+      "https://asset.kompas.com/crops/0YF8ADHYMMFRgs_Q2lv7FBsnfZE=/0x0:5184x3456/1200x800/data/photo/2022/12/20/63a1212ebc036.jpg",
+      "https://asset.kompas.com/crops/W1CBrfFbt3kVrBRajTIwKDX6WYo=/0x0:5184x3456/750x500/data/photo/2022/12/20/63a1212ef3749.jpg",
+      "https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/2000302783948/Miniapolis-Lippo-Mall-Puri-Tickets-223116cc-6e8c-49b4-a83b-1c835a85e7ad.jpeg?tr=q-60,c-at_max,w-1280,h-720&_src=imagekit",
+    ],
+    facilities: [
+      "Mr. Crick Express: Kereta tanpa rel dari Kanada yang memiliki peluit dan kepulan asap layaknya kereta api sesungguhnya.",
+      "Noa's Park: Taman bermain untuk anak di bawah 6 tahun dengan tema transportasi.",
+      "Hideout: Lokasi permainan khusus untuk anak di atas 6 tahun dengan konsep rumah pohon.",
+      "Doodles: Tempat melatih imajinasi serta kreativitas anak lewat kegiatan melukis, mengarang cerita, memasak, merakit robot, balet, modelling, dan lainnya.",
+      "42 gerai toko bertaraf internasional",
+    ],
+    location: "Jakarta Pusat",
+    url: "https://www.myminiapolis.com/",
+    rating: "4.4",
+    background: "bg-card-2",
+  },
+  {
+    id: "2",
+    name: "Buumi Playscape",
+    desc: "",
+    image: [
+      "https://pacificplace.b-cdn.net/directory_image/JrVZg/3%20(Large).jpg",
+      "https://asset.kompas.com/crops/4XCvJ-y2oNR5fZf31weMfiUdRT4=/0x0:690x460/750x500/data/photo/2023/12/11/6576df0dc361f.jpeg",
+      "https://parentalk.id/wp-content/uploads/2018/08/buumi.jpg",
+    ],
+    facilities: [
+      "Tree House",
+      "Caterpillar Tunnel",
+      "Ant's House",
+      "Baby's Lounge",
+      "Rayya's Classroom",
+      "Satya's Night Forest",
+      "Imaginative Leaves Climbing",
+      "Retail Space",
+      "Kelas Edukatif",
+    ],
+    location: "Jakarta Selatan",
+    url: "https://www.buumi.co/",
+    rating: "4.5",
+    background: "bg-card-1",
+  },
+  {
+    id: "3",
+    name: "Youreka Kids Farm",
+    desc: "",
+    image: [
+      "https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit19201280gsm/events/2023/08/07/42a4f359-7d16-4907-9179-9c01258bf12f-1691389458734-876b550cfc59c5efad9ddc320ee165ab.png",
+      "https://hargaticket.com/wp-content/uploads/2020/12/youreka.jpg",
+      "https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit19201280gsm/events/2023/08/07/8f387a1e-a61e-4b5c-8099-28667490b7c2-1691388710620-15f8556f157eeb12027c26a6bbd4a022.png",
+    ],
+    facilities: [
+      "Cow Barn",
+      "Chicken Farm",
+      "Sheep Barn",
+      "Fish Pond",
+      "Tea Garden",
+      "Coconut Plantation",
+      "Corn Farm",
+      "Cocoa Tree",
+      "Dan lain-lain",
+    ],
+    location: "Jakarta Selatan",
+    url: "https://www.yourekaworld.id/",
+    rating: "4.7",
+    background: "bg-card-2",
+  },
+];
+
 export const PERSON = [
   {
     name: "Kania khansa Bakri",

@@ -86,12 +86,12 @@ useHead({
           <div v-if="activeTab === 'tab2'">
             <Swiper
               :modules="[SwiperPagination]"
-              :slides-per-view="2"
+              :slides-per-view="1"
               :space-between="24"
               :pagination="true"
               :breakpoints="{
                 768: {
-                  slidesPerView: 3,
+                  slidesPerView: 2,
                 },
                 1024: {
                   slidesPerView: 4,
@@ -99,15 +99,18 @@ useHead({
               }"
             >
               <SwiperSlide
-                v-for="item in PERAWATAN"
+                v-for="item in TAMAN_BERMAIN"
                 :key="item"
                 class="px-1 pt-1 pb-10"
               >
-                <CardProduct
+                <CardArticle2
                   :name="item.name"
                   :image="item.image"
                   :size="item.size"
-                  :url="'perawatan/' + item.id"
+                  :location="item.location"
+                  :background="item.background"
+                  :rating="item.rating"
+                  :url="'taman-bermain/' + item.id"
                 />
               </SwiperSlide>
             </Swiper>
