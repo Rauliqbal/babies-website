@@ -40,5 +40,8 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["nuxt-swiper", "@nuxt/content"],
+  modules: ["nuxt-swiper", "@nuxt/content", "nuxt-disqus"],
+  disqus: {
+    shortname: "babiesbuddies",
+  },
 });

@@ -88,7 +88,7 @@ useHead({
         <div class="col-span-2 md:col-span-1 bg-slate-100 rounded-xl">
           <div>
             <h5 class="text-2xl px-6 py-4">Undangan Yang Tertunda</h5>
-            <div class="w-full h-1 bg-gray-300"></div>
+            <div class="w-full h-[2px] bg-gray-300"></div>
 
             <div class="flex flex-col items-center my-8 justify-center">
               <svg
@@ -124,15 +124,18 @@ useHead({
             :key="item.id"
             :class="
               item.background +
-              ' md:p-4 md:px-8 px-4 py-10 rounded-3xl flex flex-col items-center relative'
+              ' md:p-8 md:px-8 px-4 py-10 rounded-3xl flex flex-col items-center relative'
             "
           >
             <img :src="'/images/' + item.image" :alt="item.title" />
             <h6 class="text-xl font-bold mt-4 text-center">{{ item.title }}</h6>
             <p class="text-center mt-2">{{ item.desc }}</p>
-            <button class="btn-primary absolute -bottom-6 rounded-full text-sm">
+            <NuxtLink
+              :to="item._path"
+              class="btn-primary absolute -bottom-6 rounded-full text-sm"
+            >
               Bergabung
-            </button>
+            </NuxtLink>
           </div>
         </div>
       </div>
