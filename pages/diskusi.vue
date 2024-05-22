@@ -1,8 +1,10 @@
 <script setup>
-let activeTab = ref("tab1");
+const { data: diskusi } = await useAsyncData("diskusi", () =>
+  queryContent("/diskusi").sort({ publishedAt: -1 }).find()
+);
 
 useHead({
-  title: "Kebutuhan Bayi & Anak",
+  title: "Forum Diskusi",
 });
 </script>
 <template>
@@ -30,7 +32,7 @@ useHead({
           class="col-span-2 bg-slate-100 flex-col md:flex-row rounded-xl px-6 py-4 md:px-10 md:py-8 flex items-center justify-between"
         >
           <div class="order-last">
-            <h5 class="text-2xl md:text-3xl font-bold mt-4 md:mt-0">
+            <h5 class="text-2xl md:text-3xl font-semibold mt-4 md:mt-0">
               Selamat Datang di Ruang!
             </h5>
             <p class="desc mt-2">Ikuti ruang untuk menjelajahi minat anda</p>
@@ -108,6 +110,29 @@ useHead({
               </svg>
               <p>Tidak ada undangan</p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10">
+        <h5 class="text-3xl font-semibold">Temukan Ruang</h5>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8 gap-10 md:gap-4"
+        >
+          <div
+            v-for="item in diskusi"
+            :key="item.id"
+            :class="
+              item.background +
+              ' md:p-4 md:px-8 px-4 py-10 rounded-3xl flex flex-col items-center relative'
+            "
+          >
+            <img :src="'/images/' + item.image" :alt="item.title" />
+            <h6 class="text-xl font-bold mt-4 text-center">{{ item.title }}</h6>
+            <p class="text-center mt-2">{{ item.desc }}</p>
+            <button class="btn-primary absolute -bottom-6 rounded-full text-sm">
+              Bergabung
+            </button>
           </div>
         </div>
       </div>
