@@ -16,7 +16,7 @@ const data = TAMAN_BERMAIN[id];
         </div>
       </header>
 
-      <div class="grid md:grid-cols-2 gap-8 items-center mt-8">
+      <div class="grid md:grid-cols-2 gap-8 mt-8">
         <div class="grid grid-cols-2 gap-4 md:gap-5">
           <div class="col-span-2">
             <img

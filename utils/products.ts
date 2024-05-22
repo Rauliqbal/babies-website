@@ -282,7 +282,7 @@ export const DAYCARE = [
   {
     id: 0,
     name: "Apple Grow Daycare",
-    desc: "",
+    desc: "Apple Grow Daycare adalah penitipan anak di daerah Tebet, Jakarta Selatan yang mengkombinasikan metode belajar dan kurikulum yang disusun dengan arahan dari Psikolog.",
     image: [
       "https://lh3.googleusercontent.com/p/AF1QipOoWYpPuJkBCTsM12y8UNh1kGxmXsDZxa_D6nqx=s680-w680-h510",
       "https://down-id.img.susercontent.com/file/id-11134201-7r98s-lp7koxufd1n2f9",
@@ -304,7 +304,7 @@ export const DAYCARE = [
   {
     id: 1,
     name: "LittleBee Montessori School & Daycare",
-    desc: "",
+    desc: "LittleBee Montessori School & Daycare Jakarta percaya bahwa pendekatan terbaik melalui anak haruslah sesuai dengan kondisi dan minat anak, melalui kegiatan yang menyenangkan yang sesuai dengan tingkat usia dan tahapan perkembangannya. Kami memilih Montessori sebagai metoda dan filosofi kami dalam pendidikan anak, dengan menggunakan bahasa pengantar Indonesia.",
     image: [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIx4IG79Gf41pImP153gVrPxrJeDE7zrohZTKOXDGBEQ&s",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjvD2KQGKkaVH2uukVWHZW9U403-dy9uo0sEj3sYbVCA&s",
@@ -325,7 +325,7 @@ export const DAYCARE = [
   {
     id: 2,
     name: "Paradise Baby Daycare",
-    desc: "",
+    desc: "Paradise Baby Daycare  hadir sebagai solusi pengasuhan bagi buah hati anda.Moto kami : Care Like Parents, Build Child TalentKami mengasuh buah hati anda sebagaimana 'care' nya orang tua, kebahagiaan dan kecemasan orang tua terhadap tumbuh kembang anak juga kebahagiaan dan kecemasan kami.",
     image: [
       "https://i0.wp.com/paradisebabydaycare.com/wp-content/uploads/2018/06/activity-room_2.jpg?fit=799%2C535&ssl=1",
       "https://i0.wp.com/paradisebabydaycare.com/wp-content/uploads/2018/06/indoor-play-ground.jpg?fit=799%2C535&ssl=1",
@@ -347,7 +347,7 @@ export const DAYCARE = [
   {
     id: 3,
     name: "Lovely Sunshine Daycare",
-    desc: "",
+    desc: "Lovely Sunshine Daycare menyediakan kurikulum yang menyenangkan dan menarik yang menstimulasi pengalaman belajar anak. Program harian dirancang agar cukup fleksibel untuk menanggapi kebutuhan dan minat anak-anak sebagai individu, dan dalam kelompok. Kurikulum kami direncanakan setiap minggu untuk setiap kelompok dan sesuai dengan rentang usia anak-anak.",
     image: [
       "https://www.lovelysunshinedaycare.com/wp-content/uploads/2015/05/10-Keunggulan-Lovely-Sunshine-Daycare.jpg",
       "https://akcdn.detik.net.id/visual/2017/07/03/bfe92529-efd3-4420-aad5-c20a9eb9c6ce_169.jpg?w=650",
@@ -370,7 +370,7 @@ export const PERPUSTAKAAN = [
   {
     id: "0",
     name: "Rimba Baca",
-    desc: "",
+    desc: "Berawal dari mimpi sederhana kami untuk menciptakan ruang yang nyaman untuk anak-anak dan keluarga membaca dan menghabiskan waktu bersama. Rimba Baca berharap dapat selalu menjadi bagian dari kenangan masa kecil bahagia bagi seluruh anggota dan pengunjung Rimba Baca.",
     image: [
       "https://asset.kompas.com/crops/dCOui7LvSmL16x1PsK4EDTVrnhw=/0x0:1796x1197/750x500/data/photo/2023/07/02/64a186336c6f5.jpg",
       "https://asset.kompas.com/crops/1-tr-rOI93duAzh5tSBt9SRRBPg=/0x0:1799x1199/750x500/data/photo/2023/07/02/64a1868a2e3f6.jpg",
@@ -394,7 +394,7 @@ export const PERPUSTAKAAN = [
   {
     id: "1",
     name: "Perpustakaan Umum Kota Depok",
-    desc: "",
+    desc: "Perpustakaan Umum Kota Depok menyediakan berbagai jenis kategori buku mulai dari pengetahuan umum, ensiklopedia hingga buku anak-anak. Masyarakat dapat menikmatinya dengan membacanya langsung di Perpustakaan Umum Kota Depok ataupun dapat meminjamnya untuk dibawa pulang.",
     image: [
       "https://assets.isu.pub/document-structure/210416063035-36e85402802e48da3a02a1f03a1452b3/v1/3e85d5cc6dc06f4a158d5203e0bc9c0c.jpg",
       "https://berita.depok.go.id/storage/posts//wuz4eNfcCrh4pcojIb044h0TmUWv7MsyHpMlRQV4.webp",
@@ -413,7 +413,7 @@ export const PERPUSTAKAAN = [
   {
     id: "2",
     name: "Perpustakaan Jakarta Timur",
-    desc: "",
+    desc: "Perpustakaan Jakarta Timur adalah perpustakaan daerah berstatus perpustakaan tingkat kota. Perpustakaan ini berlokasi dalam Kompleks Pendidikan Rawa Bunga, Jatinegara, Kota Administrasi Jakarta Timur, DKI Jakarta.",
     image: [
       "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhU3WLeljFYaEEcg5DcIJv9ksYpfldTaoNywpitJL55SH9mw_C9wePox-0GQahOE5WDO6KjCVKgR_D8ZrKQbJJZlQ_-oDZwAgMUP_HoCXziKqHcYWDHcJgpDA40SpgBwaRtRd_4DicrRqUOKgI_i9-5w_Ypm6NpTH9HhLycrSO3uM768Q-bvbwqIU_7/s1920/5_20230517_113922_0001.jpg",
       "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimXOl5_zXCVfAY_El2L3PLcnNrWqMHY8opCQfDxbnZf11kPGFLF4ToBRQfcDKOBKImYBionKrhehmtwJjIpTA9GLjzYItMfQW1M6DyRj8KKKSAoCpRROypdLZg2SJtAaq5_BnlvEW2dWelbFX4pRA21QvqMQrV-w3XOr8_-fYKrCDme-GiTJsJdQbE/s1920/7_20230517_113922_0003.jpg",
@@ -437,7 +437,7 @@ export const PERPUSTAKAAN = [
   {
     id: "3",
     name: "Bogor Regional Library",
-    desc: "",
+    desc: "Bogor Regional Library bertujuan untuk 'Meningkatnya Kualitas Literasi Masyarakat Kota Bogor' dengan sasaran 'Meningkatnya Kuantitas Perpustakaan Ber-Standar Nasional Perpustakaan (SNP) di Kota Bogor'. Sedangkan tujuan dibidang Arsip yaitu 'Meningkatkan kualitas pengelolaan arsip' dengan sasaran 'Meningkatnya kualitas pengelolaan arsip dinamis Kota Bogor' dan 'Meningkatnya tata kelola Dinas asip dan perpustakaan yang efektif, efisien dan akuntabel'",
     image: [
       "https://inilahonline.com/wp-content/uploads/2022/12/Perpustakaan-5-690x400.jpg",
       "https://inilahonline.com/wp-content/uploads/2022/12/Perpustakaan-3-690x400.jpg",
@@ -460,7 +460,7 @@ export const TAMAN_BERMAIN = [
   {
     id: "0",
     name: "Apple Bee Kid's playground",
-    desc: "",
+    desc: "Apple Bee Kid’s playground merupakan tempat terbaik bagi anak-anak untuk bersenang-senang.",
     image: [
       "https://asset-a.grid.id/crop/0x0:0x0/x/photo/2022/10/01/whatsapp-image-2022-10-01-at-15-20221001032444.jpeg",
       "https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/2001136963468/Apple%2520Bee%2520Playground%2520Mall%2520of%2520Indonesia%2520Tickets-b7af5bf1-8f48-47ba-a6e2-d4127ffb20bc.jpeg?tr=q-60,c-at_max,w-1280,h-720&_src=imagekit",
@@ -480,7 +480,7 @@ export const TAMAN_BERMAIN = [
   {
     id: "1",
     name: "Miniapolis",
-    desc: "",
+    desc: "Miniapolis adalah taman bermain untuk keluarga dengan anak usia 0-12 tahun. Miniapolis didesain khusus sesuai imajinasi dunia anak dengan pilihan permainan yang unik untuk melatih kemampuan motorik dan sensorik anak, didukung dengan aktivitas rutin yang merangsang kreativitas dan imajinasi anak. Konsep Miniapolis yang unik di setiap cabang disesuaikan dengan kebutuhan hiburan untuk mengisi keceriaan keluarga di setiap daerah.",
     image: [
       "https://asset.kompas.com/crops/0YF8ADHYMMFRgs_Q2lv7FBsnfZE=/0x0:5184x3456/1200x800/data/photo/2022/12/20/63a1212ebc036.jpg",
       "https://asset.kompas.com/crops/W1CBrfFbt3kVrBRajTIwKDX6WYo=/0x0:5184x3456/750x500/data/photo/2022/12/20/63a1212ef3749.jpg",
@@ -501,7 +501,7 @@ export const TAMAN_BERMAIN = [
   {
     id: "2",
     name: "Buumi Playscape",
-    desc: "",
+    desc: "Buumi Playscape membina lingkungan yang aman dan menyenangkan untuk bermain dan tumbuh kembang anak. Taman bermain kami dirancang dengan cermat untuk memupuk rasa ingin tahu dan mendorong eksplorasi, melayani rentang usia yang luas dari 6 bulan hingga 12 tahun.",
     image: [
       "https://pacificplace.b-cdn.net/directory_image/JrVZg/3%20(Large).jpg",
       "https://asset.kompas.com/crops/4XCvJ-y2oNR5fZf31weMfiUdRT4=/0x0:690x460/750x500/data/photo/2023/12/11/6576df0dc361f.jpeg",
@@ -526,7 +526,7 @@ export const TAMAN_BERMAIN = [
   {
     id: "3",
     name: "Youreka Kids Farm",
-    desc: "",
+    desc: "Menggabungkan hiburan dan pendidikan untuk memberikan pengalaman belajar yang menyenangkan bagi anak-anak!",
     image: [
       "https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit19201280gsm/events/2023/08/07/42a4f359-7d16-4907-9179-9c01258bf12f-1691389458734-876b550cfc59c5efad9ddc320ee165ab.png",
       "https://hargaticket.com/wp-content/uploads/2020/12/youreka.jpg",
