@@ -46,7 +46,7 @@ const data = TAMAN_BERMAIN[id];
             :to="data.productUrl"
             target="_blank"
             class="md:hidden mb-10 inline-flex w-full justify-center px-10 py-2 text-xl bg-primary text-white font-bold rounded-full"
-            >Beli</NuxtLink
+            >More info</NuxtLink
           >
 
           <h5 class="text-2xl font-semibold">Deskripsi:</h5>
