@@ -178,15 +178,6 @@ function showHide() {
                     >
                   </li>
 
-                  <!-- Konsultasi Dokter Link -->
-                  <li>
-                    <NuxtLink
-                      class="peer py-4 md:py-6 uppercase font-semibold tracking-wide transition-all ease-out duration-200 text-gray-800 before:transition-all before:duration-200 relative before:w-0 md:hover:before:w-full before:h-[2px] before:bottom-5 before:block before:absolute before:bg-primary"
-                      @click="showHide"
-                      to="/konsultasi"
-                      >Konsultasi Dokter</NuxtLink
-                    >
-                  </li>
                   <!-- Diskusi Link -->
                   <li>
                     <NuxtLink

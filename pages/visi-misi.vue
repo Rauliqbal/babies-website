@@ -50,7 +50,7 @@ useHead({
           class="bg-secondary rounded-3xl pl-4 md:rounded-[75px] w-full pt-20 md:pt-0 py-8 md:h-[200px] md:ml-[8%] pr-4 md:pr-8 flex items-center"
         >
           <div class="md:pl-36">
-            <h5 class="text-3xl font-semibold">VISI:</h5>
+            <h5 class="text-3xl font-semibold">MISI:</h5>
             <ul class="list-disc">
               <li class="desc md:text-xl mt-2 ml-8 sm:text-sm">
                 Menyediakan konten informatif dan edukatif yang relevan dengan
